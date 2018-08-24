@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1.0" client="site" method="upgrade">
-	<name>Events Validation Demo</name>
+	<name>Events Demo</name>
 	<author>Constantin Romankiewicz</author>
 	<version>0.0.1</version>
 	<description>This module won't show anything. Its only purpose is to display a form in backend.</description>
