@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Events Validation Demo</name>
+	<author>Constantin Romankiewicz</author>
+	<version>0.0.1</version>
+	<description>This module won't show anything. Its only purpose is to display a form in backend.</description>
+	<files>
+		<filename>mod_demoevents.xml</filename>
+		<filename module="mod_demoevents">mod_demoevents.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="text"
+					type="text"
+					label="Text"
+					onchange="alert('HTML event called! New value: ' + this.value)"
+				/>
+				<field
+					name="calendar"
+					type="calendar"
+					label="Calendar"
+					onchange="alert('HTML event called! New value: ' + this.value)"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
